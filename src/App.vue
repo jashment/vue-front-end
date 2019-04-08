@@ -17,8 +17,8 @@
     </v-toolbar>
 
     <v-content>
-      // <HelloWorld/>
-      // <Display/>
+       <HelloWorld/> 
+       <Display/>
     </v-content>
   </v-app>
 </template>
@@ -37,6 +37,9 @@ export default {
     return {
       //
     }
+  },
+  apollo: {
+    //
   }
 }
 </script>

@@ -17,18 +17,21 @@
     </v-toolbar>
 
     <v-content>
-      <HelloWorld/>
+      // <HelloWorld/>
+      // <Display/>
     </v-content>
   </v-app>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
+import Display from './components/Display'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Display
   },
   data () {
     return {

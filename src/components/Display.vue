@@ -1,22 +1,21 @@
 <template>
-    <v-app>
+    <v-container>
         <v-layout>
             <v-card>
-                    <v-img></v-img>
                     <v-card-title>
-                        <div>
+                        
                             <h2>Animal Name</h2>
                             <p>Description</p>
-                        </div>
+                        
                     </v-card-title>
             </v-card>
         </v-layout>
-    </v-app>
+    </v-container>
 </template>
 
 <script>
     export default {
-
+        name: "Display"
     }
 </script>
 

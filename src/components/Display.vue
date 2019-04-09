@@ -10,24 +10,18 @@
                     </v-card-title>
             </v-card>-->
 
-            <animalCard v-for="animal in animals"
-            :key="animal.name"
-            :animal="animal"
-            />
-
             <v-flex
-              v-for="n in 9"
-              :key="n"
+              v-for="animal in animals"
+              :key="animal.name"
               xs4
             >
-
+                <animalCard :animal="animal" width="200px" height="200px"/>
             </v-flex>
         </v-layout>
     </v-container>
 </template>
 
 <script>
-import axios from 'axios'
 import gql from 'graphql-tag'
 import animalCard from './animalCard.vue'
 
@@ -50,6 +44,7 @@ import animalCard from './animalCard.vue'
                 animals {
                     name
                     description
+                    url
                 }
             }`,
         }

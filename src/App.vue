@@ -18,6 +18,7 @@
 
     <v-content>
        <!-- <HelloWorld/>  -->
+       <apolloAllCall/>
        <Display/>
     </v-content>
   </v-app>

@@ -20,6 +20,7 @@
        <!-- <HelloWorld/>  -->
        <apolloAllCall/>
        <apolloOneCall/>
+       <apolloConnectCall/>
        <Display/>
     </v-content>
   </v-app>
@@ -30,6 +31,7 @@ import HelloWorld from './components/HelloWorld'
 import Display from './components/Display'
 import apolloAllCall from './components/apolloAllCall'
 import apolloOneCall from './components/apolloOneCall'
+import apolloConnectCall from './components/apolloConnectCall'
 
 export default {
   name: 'App',
@@ -37,7 +39,8 @@ export default {
     HelloWorld,
     Display,
     apolloAllCall,
-    apolloOneCall
+    apolloOneCall,
+    apolloConnectCall
   },
   data () {
     return {

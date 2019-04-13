@@ -45,6 +45,7 @@ import animalCard from './animalCard.vue'
                     name
                     description
                     url
+                    emotion
                 }
             }`,
         }

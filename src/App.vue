@@ -27,12 +27,14 @@
 <script>
 import HelloWorld from './components/HelloWorld'
 import Display from './components/Display'
+import apolloAllCall from './components/apolloAllCall'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    Display
+    Display,
+    apolloAllCall
   },
   data () {
     return {

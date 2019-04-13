@@ -23,6 +23,7 @@
        <apolloConnectCall/>
        <apolloCreateMutation/>
        <apolloDeleteMutation/>
+       <apolloUpdateMutation/>
        <Display/>
     </v-content>
   </v-app>
@@ -36,6 +37,7 @@ import apolloOneCall from './components/apolloOneCall'
 import apolloConnectCall from './components/apolloConnectCall'
 import apolloCreateMutation from './components/apolloCreateMutation'
 import apolloDeleteMutation from './components/apolloDeleteMutation'
+import apolloUpdateMutation from './components/apolloUpdateMutation'
 
 export default {
   name: 'App',
@@ -46,7 +48,8 @@ export default {
     apolloOneCall,
     apolloConnectCall,
     apolloCreateMutation,
-    apolloDeleteMutation
+    apolloDeleteMutation,
+    apolloUpdateMutation
   },
   data () {
     return {

@@ -21,6 +21,7 @@
        <apolloAllCall/>
        <apolloOneCall/>
        <apolloConnectCall/>
+       <apolloCreateMutation/>
        <Display/>
     </v-content>
   </v-app>
@@ -32,6 +33,7 @@ import Display from './components/Display'
 import apolloAllCall from './components/apolloAllCall'
 import apolloOneCall from './components/apolloOneCall'
 import apolloConnectCall from './components/apolloConnectCall'
+import apolloCreateMutation from './components/apolloCreateMutation'
 
 export default {
   name: 'App',
@@ -40,7 +42,8 @@ export default {
     Display,
     apolloAllCall,
     apolloOneCall,
-    apolloConnectCall
+    apolloConnectCall,
+    apolloCreateMutation
   },
   data () {
     return {

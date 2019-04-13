@@ -19,6 +19,7 @@
     <v-content>
        <!-- <HelloWorld/>  -->
        <apolloAllCall/>
+       <apolloOneCall/>
        <Display/>
     </v-content>
   </v-app>
@@ -28,13 +29,15 @@
 import HelloWorld from './components/HelloWorld'
 import Display from './components/Display'
 import apolloAllCall from './components/apolloAllCall'
+import apolloOneCall from './components/apolloOneCall'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     Display,
-    apolloAllCall
+    apolloAllCall,
+    apolloOneCall
   },
   data () {
     return {

@@ -20,8 +20,10 @@ export default {
       this.$apollo
         .query({
           query: gql`
-            query oneAnimal {
-                animal(where: { id:  "cjtz657hk05vn0727f4qc2wyn" }
+            query oneAnimal(
+              $id: ID
+            ) {
+                animal(where: { id:  $id }
                 ) {
                     id
                     name

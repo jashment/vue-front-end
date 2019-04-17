@@ -39,6 +39,7 @@ import animalCard from './animalCard.vue'
                     description
                     url
                     emotion
+                    genus
                 }
             }`
         }

@@ -10,6 +10,7 @@
                     <li>ID: {{animal.id}}</li>
                     <li>Emotion: {{animal.emotion}}</li>
                     <li>Description: {{animal.description}}</li>
+                    <li>Genus: {{animal.genus}}</li>
                 </ul>
             </div>
         </v-card-title>

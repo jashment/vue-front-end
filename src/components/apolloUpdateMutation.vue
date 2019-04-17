@@ -33,7 +33,6 @@ export default {
                 mutation updateAnimal(
                     $id: ID
                     $description: String
-                    $name: String
                 ) {
                     updateAnimal(
                     data:{description: $description}

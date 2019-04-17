@@ -1,8 +1,11 @@
 <template>
-  <div>
-    <v-btn color="info" v-on:click="getAllGraphql()">One</v-btn>
-    {{myItem}}
-    error: {{error}}
+  <div class="about">
+    <v-container>
+        <v-text-field v-model="myItem.id" label="ID" required></v-text-field>
+      <v-btn color="info" v-on:click="getOneGraphql()">One</v-btn>
+          {{error}}
+      {{myItem}}
+    </v-container>
   </div>
 </template>
 
@@ -12,25 +15,34 @@ export default {
   data() {
     return {
       error: "",
-      myItem: {}
+      myItem: {
+        id: String,
+        name: String,
+        emotion: String
+      }
     };
   },
   methods: {
-    getAllGraphql: function() {
+    getOneGraphql: function() {
       this.$apollo
         .query({
           query: gql`
-            query oneAnimal(
+            query oneAnimal (
               $id: ID
-            ) {
-                animal(where: { id:  $id }
-                ) {
-                    id
-                    name
-                    createdAt
-                }
-                }
-          `
+            ){
+              animal(where: {id: $id}
+              ) {
+                id
+                name
+                emotion
+              }
+            }
+          `,
+          variables: {
+            id: this.myItem.id,
+            name: this.myItem.name,
+            emotion: this.myItem.emotion
+          }
         })
         .then(res => {
           this.myItem = res.data;

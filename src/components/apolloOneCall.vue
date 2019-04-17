@@ -2,9 +2,9 @@
   <div class="about">
     <v-container>
         <v-text-field v-model="myItem.id" label="ID" required></v-text-field>
-      <v-btn color="info" v-on:click="getOneGraphql()">One</v-btn>
-          {{error}}
-      {{myItem}}
+      <v-btn color="info" v-on:click="getOneGraphql(), toggle()">One</v-btn>
+          <div v-show="isOpen">{{error}}
+      {{myItem}}</div>
     </v-container>
   </div>
 </template>
@@ -19,7 +19,8 @@ export default {
         id: String,
         name: String,
         emotion: String
-      }
+      },
+      isOpen: false
     };
   },
   methods: {
@@ -50,6 +51,9 @@ export default {
         .catch(err => {
           this.error = err;
         });
+    },
+    toggle: function() {
+      this.isOpen = !this.isOpen
     }
   }
 };

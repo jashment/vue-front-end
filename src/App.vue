@@ -10,7 +10,8 @@
 
     <v-content>
        <!-- <HelloWorld/>  -->
-       <v-container >
+       <v-btn color="info" @click="toggle()">GraphQL Stuff</v-btn>
+       <v-container v-show="isOpen">
         <apolloAllCall/>
         <apolloOneCall/>
         <apolloConnectCall/>

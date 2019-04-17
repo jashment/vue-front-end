@@ -22,7 +22,8 @@ export default {
       myItem: {
         id: String,
         name: String,
-        emotion: String
+        emotion: String,
+        genus: String
       },
       isOpen: false
     };
@@ -40,13 +41,15 @@ export default {
                 id
                 name
                 emotion
+                genus
               }
             }
           `,
           variables: {
             id: this.myItem.id,
             name: this.myItem.name,
-            emotion: this.myItem.emotion
+            emotion: this.myItem.emotion,
+            genus: this.myItem.genus
           }
         })
         .then(res => {

@@ -16,6 +16,9 @@
             <v-flex xs12>
               <v-text-field v-model="item.emotion" label="Emotion" required></v-text-field>
             </v-flex>
+            <v-flex xs12>
+              <v-text-field v-model="item.genus" label="Genus" required></v-text-field>
+            </v-flex>
             <v-btn @click="submitCreate()">Create</v-btn>
             {{error}}
             {{returnedItem}}
@@ -33,7 +36,8 @@ export default {
       name: String,
       description: String,
       url: String,
-      emotion: String
+      emotion: String,
+      genus: String
     },
     returnedItem: {}
   }),
@@ -46,17 +50,20 @@ export default {
                 $description: String
                 $url: String
                 $emotion: String
+                $genus: String
             ) {
                 createAnimal(data: {
                     name: $name
                     description: $description
                     url: $url
                     emotion: $emotion
+                    genus: $genus
                 }) {
                     name
                     description
                     url
                     emotion
+                    genus
                 }
                 }
           `,
@@ -64,7 +71,8 @@ export default {
             name: this.item.name,
             description: this.item.description,
             url: this.item.url,
-            emotion: this.item.emotion
+            emotion: this.item.emotion,
+            genus: this.item.genus
           }
         })
         .then(res => {

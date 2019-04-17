@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-btn color="info" v-on:click="getAllGraphql()">All</v-btn>
-    {{myItem}}
+    <v-btn color="info" v-on:click="getAllGraphql() ">All</v-btn>
+    <v-card>{{myItem.animals}}</v-card>
     error: {{error}}
   </div>
 </template>

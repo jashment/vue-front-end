@@ -7,6 +7,7 @@
             <div >
                 <h3 class="headline mb-0">{{animal.name}}</h3>
                 <ul>
+                    <li>ID: {{animal.id}}</li>
                     <li>Emotion: {{animal.emotion}}</li>
                     <li>Description: {{animal.description}}</li>
                 </ul>

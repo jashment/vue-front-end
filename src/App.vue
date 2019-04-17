@@ -53,11 +53,16 @@ export default {
   },
   data () {
     return {
-      //
+      isOpen: false
     }
   },
   apollo: {
     //
+  },
+  methods: {
+    toggle: function() {
+      this.isOpen = !this.isOpen
+    }
   }
 }
 </script>

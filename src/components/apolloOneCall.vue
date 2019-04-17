@@ -2,7 +2,7 @@
   <div class="about">
     <v-container>
       <v-card>
-        <h1>View One Animal</h1>
+        <h1>View One Animal Data</h1>
         <v-text-field v-model="myItem.id" label="ID" required></v-text-field>
 
         <v-btn color="info" v-on:click="getOneGraphql(), toggle()">One</v-btn>

@@ -2,7 +2,7 @@
   <div class="about">
         <v-container>
           <v-card>
-            <h1>Delete An Animal</h1>
+            <h1>Delete An Animal Data</h1>
             <v-flex xs12>
               <v-text-field v-model="item.id" label="id" required></v-text-field>
             </v-flex>

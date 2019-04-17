@@ -2,7 +2,7 @@
   <div>
     <v-container>
       <v-card>
-        <h1>View All Animals</h1>
+        <h1>View All Animals Data</h1>
         <v-btn color="info" v-on:click="getAllGraphql(), toggle()">All</v-btn>
         <v-card v-show="isOpen">{{myItem.animals}} {{error}}</v-card>
       </v-card>

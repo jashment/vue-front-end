@@ -1,21 +1,25 @@
 <template>
   <div class="about">
-      {{error}}
-      {{returnedItem}}
+
         <v-container>
-          <v-flex xs12>
-            <v-text-field v-model="item.name" label="Name" required></v-text-field>
-          </v-flex>
-          <v-flex xs12>
-            <v-text-field v-model="item.description" label="Description" required></v-text-field>
-          </v-flex>
-          <v-flex xs12>
-            <v-text-field v-model="item.url" label="URL" required></v-text-field>
-          </v-flex>
-          <v-flex xs12>
-            <v-text-field v-model="item.emotion" label="Emotion" required></v-text-field>
-          </v-flex>
-      <v-btn @click="submitCreate()">Create</v-btn>
+          <v-card>
+            <h1>Create An Animal</h1>
+            <v-flex xs12>
+              <v-text-field v-model="item.name" label="Name" required></v-text-field>
+            </v-flex>
+            <v-flex xs12>
+              <v-text-field v-model="item.description" label="Description" required></v-text-field>
+            </v-flex>
+            <v-flex xs12>
+              <v-text-field v-model="item.url" label="URL" required></v-text-field>
+            </v-flex>
+            <v-flex xs12>
+              <v-text-field v-model="item.emotion" label="Emotion" required></v-text-field>
+            </v-flex>
+            <v-btn @click="submitCreate()">Create</v-btn>
+            {{error}}
+            {{returnedItem}}
+          </v-card>
         </v-container>
   </div>
 </template>

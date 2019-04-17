@@ -1,15 +1,18 @@
 <template>
   <div class="about">
-      {{error}}
-      {{returnedItem}}
         <v-container>
-          <v-flex xs12>
-            <v-text-field v-model="item.id" label="id" required></v-text-field>
-          </v-flex>
-          <v-flex xs12>
-            <v-text-field v-model="item.description" label="Description" required></v-text-field>
-          </v-flex>
-      <v-btn @click="submitUpdate()">Update</v-btn>
+          <v-card>
+            <h1>Update An Animal</h1>
+            <v-flex xs12>
+              <v-text-field v-model="item.id" label="id" required></v-text-field>
+            </v-flex>
+            <v-flex xs12>
+              <v-text-field v-model="item.description" label="Description" required></v-text-field>
+            </v-flex>
+            <v-btn @click="submitUpdate()">Update</v-btn>
+            {{error}}
+            {{returnedItem}}
+          </v-card>
         </v-container>
   </div>
 </template>

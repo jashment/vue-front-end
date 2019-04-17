@@ -1,8 +1,12 @@
 <template>
   <div>
-    <v-btn color="info" v-on:click="getAllGraphql(), toggle()">All</v-btn>
-    <v-card v-show="isOpen">{{myItem.animals}}
-    error: {{error}}</v-card>
+    <v-container>
+      <v-card>
+        <h1>View All Animals</h1>
+        <v-btn color="info" v-on:click="getAllGraphql(), toggle()">All</v-btn>
+        <v-card v-show="isOpen">{{myItem.animals}} {{error}}</v-card>
+      </v-card>
+    </v-container>
   </div>
 </template>
 

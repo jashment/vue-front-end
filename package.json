@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve & node app.js",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -13,6 +13,7 @@
     "core-js": "^2.6.5",
     "express": "^4.16.4",
     "mongoose": "^5.5.2",
+    "node": "^11.14.0",
     "vue": "^2.6.6",
     "vue-apollo": "^3.0.0-beta.11",
     "vuetify": "^1.5.5"

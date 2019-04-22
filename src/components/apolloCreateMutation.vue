@@ -19,7 +19,7 @@
             <v-flex xs12>
               <v-text-field v-model="item.genus" label="Genus" required></v-text-field>
             </v-flex>
-            <v-btn @click="submitCreate()">Create</v-btn>
+            <v-btn @click="submitCreate">Create</v-btn>
             {{error}}
             {{returnedItem}}
           </v-card>
@@ -33,11 +33,11 @@ export default {
   data: () => ({
     error: "",
     item: {
-      name: String,
-      description: String,
-      url: String,
-      emotion: String,
-      genus: String
+      name: "",
+      description: "",
+      url: "",
+      emotion: "",
+      genus: ""
     },
     returnedItem: {}
   }),

@@ -4,7 +4,7 @@
           <v-card>
             <h1>Update An Animal Data</h1>
             <v-flex xs12>
-              <v-text-field v-model="item.id" label="id" required></v-text-field>
+              <v-text-field v-model="item.id" label="ID" required></v-text-field>
             </v-flex>
             <v-flex xs12>
               <v-text-field v-model="item.description" label="Description" required></v-text-field>

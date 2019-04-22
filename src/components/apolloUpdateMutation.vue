@@ -23,9 +23,9 @@ export default {
   data: () => ({
     error: "",
     item: {
-        id: String,
-        description: String,
-        name: String
+        id: "",
+        description: "",
+        name: ""
     },
     returnedItem: {}
   }),

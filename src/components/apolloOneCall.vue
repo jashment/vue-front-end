@@ -20,10 +20,10 @@ export default {
     return {
       error: "",
       myItem: {
-        id: String,
-        name: String,
-        emotion: String,
-        genus: String
+        id: "",
+        name: "",
+        emotion: "",
+        genus: ""
       },
       isOpen: false
     };

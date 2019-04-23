@@ -1,0 +1,24 @@
+<template>
+    <div>
+
+    </div>
+</template>
+
+<script>
+import axios from 'axios'
+
+export default {
+    data() {
+        return {
+            //
+        }
+    },
+    created () {
+        //
+    }
+}
+</script>
+
+<style scoped>
+
+</style>

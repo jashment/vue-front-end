@@ -21,7 +21,7 @@
        </v-container>
        <RESTCreate/>
        <RESTDisplay/>
-       <Display/>
+       <!-- <Display/> -->
     </v-content>
   </v-app>
 </template>

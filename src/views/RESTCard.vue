@@ -26,11 +26,17 @@ export default {
             //
         }
     },
+    props: {
+        animal: {
+            type: Object,
+            required: true
+        }
+    },
     created () {
         axios
         .get('https://floating-temple-55389.herokuapp.com/animals/all')
         .then((res) => {
-            this.animal = res.data
+            this.animals = res.data
         })
         .catch(error => console.log(error))
     }

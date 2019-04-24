@@ -3,7 +3,7 @@
 
         <v-container>
           <v-card>
-            <h1>Create An Animal Data</h1>
+            <h1>Create An Animal</h1>
             <v-flex xs12>
               <v-text-field v-model="item.name" label="Name" required></v-text-field>
             </v-flex>

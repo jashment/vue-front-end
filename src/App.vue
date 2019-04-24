@@ -20,6 +20,8 @@
         <apolloUpdateMutation/>
        </v-container>
        <RESTCreate/>
+       <RESTDelete/>
+       <RESTOne/>
        <RESTDisplay/>
        <!-- <Display/> -->
     </v-content>
@@ -37,6 +39,8 @@ import apolloDeleteMutation from './components/apolloDeleteMutation'
 import apolloUpdateMutation from './components/apolloUpdateMutation'
 import RESTCreate from './views/RESTCreate'
 import RESTDisplay from './views/RESTDisplay'
+import RESTDelete from './views/RESTDelete'
+import RESTOne from './views/RESTOne'
 
 export default {
   name: 'App',
@@ -50,7 +54,9 @@ export default {
     apolloDeleteMutation,
     apolloUpdateMutation,
     RESTCreate,
-    RESTDisplay
+    RESTDisplay,
+    RESTDelete,
+    RESTOne
   },
   data () {
     return {

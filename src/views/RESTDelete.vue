@@ -18,25 +18,35 @@ import axios from 'axios'
 export default {
     data() {
         return {
-            // id: this.$route.params.id,
-            // animal: {
+            id: this.$route.params.id,
+            animal: {
 
-            // }
+            }
         }
     },
     created() {
-        // axios
-        // .get('https://floating-temple-55389.herokuapp.com/animals' + this.$route.params.id)
-        // .then((res) => {
-        //     this.animal = res.data
-        //     })
+        axios
+        .get('https://floating-temple-55389.herokuapp.com/animals/all')
+        .then((res) => {
+            this.animal = res.data
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+    },
+    props: {
+        //
     },
     methods: {
-        deleteAnimal () {
+        deleteAnimal() {
+            const animalData = {
+                id: this.id
+            }
+            console.log(animalData)
             axios
-            .delete('https://floating-temple-55389.herokuapp.com/animals/' + this.$route.params.id + '/delete')
+            .delete('https://floating-temple-55389.herokuapp.com/animals/' + this.id + '/delete')
             .then((res) => {
-                alert('Animal Deleted!')
+                alert('Animal Deleted!' + animalData)
                 this.$router.push('/')
             })
             .catch((error) => {

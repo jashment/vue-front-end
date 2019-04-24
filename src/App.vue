@@ -22,6 +22,7 @@
        <RESTCreate/>
        <RESTDelete/>
        <RESTOne/>
+       <RESTUpdate/>
        <RESTDisplay/>
        <!-- <Display/> -->
     </v-content>
@@ -41,6 +42,7 @@ import RESTCreate from './views/RESTCreate'
 import RESTDisplay from './views/RESTDisplay'
 import RESTDelete from './views/RESTDelete'
 import RESTOne from './views/RESTOne'
+import RESTUpdate from './views/RESTUpdate'
 
 export default {
   name: 'App',
@@ -56,7 +58,8 @@ export default {
     RESTCreate,
     RESTDisplay,
     RESTDelete,
-    RESTOne
+    RESTOne,
+    RESTUpdate
   },
   data () {
     return {

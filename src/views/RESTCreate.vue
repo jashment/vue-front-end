@@ -2,7 +2,7 @@
     <div>
         <v-container>
           <v-card>
-            <h1>Create An Animal</h1>
+            <h1>Create An Animal from REST</h1>
             <v-flex xs12>
               <v-text-field v-model="name" label="Name" required></v-text-field>
             </v-flex>

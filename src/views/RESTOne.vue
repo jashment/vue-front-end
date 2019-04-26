@@ -2,11 +2,15 @@
     <div>
         <v-container>
           <v-card>
-            <h1>Show An Animal</h1>
+            <h1>Show An Animal from REST</h1>
             <v-flex xs12>
               <v-text-field v-model="id" label="ID" required></v-text-field>
             </v-flex>
-            <v-btn @click="showAnimal">Show One</v-btn>
+            <v-btn @click="getOne(), toggle()">Show One</v-btn>
+            <v-card v-show="isOpen" style="margin:auto; text-align:center;">
+                <v-img :src="animals.url" width="200px" height="200px" style="margin:auto;"></v-img>
+                {{animals.name}}
+            </v-card>
           </v-card>
         </v-container>
     </div>
@@ -18,7 +22,13 @@ import axios from 'axios'
 export default {
     data () {
         return {
-            animals: []
+            animals: {
+                id: "",
+                name: "",
+                emotion: "",
+                genus: ""
+            },
+            id: this.$route.params.id,
         }
     },
     props: {
@@ -29,12 +39,26 @@ export default {
     },
         created () {
             axios
-                .get('https://floating-temple-55389.herokuapp.com/animals/' + this.$route.params.id)
+                .get('https://floating-temple-55389.herokuapp.com/animals/all')
                 .then((res) => {
                     this.animals = res.data
                 })
                 .catch(error => console.log(error))
-                }
+                },
+        methods: {
+            getOne() {
+                axios
+                .get('https://floating-temple-55389.herokuapp.com/animals/' + this.id)
+                .then((res) => {
+                    this.animals = res.data
+                    console.log(res)
+                })
+                .catch(error => console.log(error))
+            },
+            toggle: function() {
+                this.isOpen = !this.isOpen
+            }
+        }
 }
 </script>
 

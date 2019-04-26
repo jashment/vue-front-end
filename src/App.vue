@@ -11,6 +11,7 @@
     <v-content>
        <!-- <HelloWorld/>  -->
        <v-btn color="info" @click="toggle()">GraphQL Content</v-btn>
+       <v-btn color="info" @click="toggle2()"> REST Content</v-btn>
        <v-container v-show="isOpen">
         <apolloAllCall/>
         <apolloOneCall/>
@@ -18,13 +19,15 @@
         <apolloCreateMutation/>
         <apolloDeleteMutation/>
         <apolloUpdateMutation/>
+        <Display/>
        </v-container>
-       <RESTCreate/>
-       <RESTDelete/>
-       <RESTOne/>
-       <RESTUpdate/>
-       <RESTDisplay/>
-       <!-- <Display/> -->
+       <v-container v-show="isOpen2">
+        <RESTCreate/>
+        <RESTDelete/>
+        <RESTOne/>
+        <RESTUpdate/>
+        <RESTDisplay/>
+       </v-container>
     </v-content>
   </v-app>
 </template>
@@ -63,7 +66,8 @@ export default {
   },
   data () {
     return {
-      isOpen: false
+      isOpen: false,
+      isOpen2: false
     }
   },
   apollo: {
@@ -72,6 +76,9 @@ export default {
   methods: {
     toggle: function() {
       this.isOpen = !this.isOpen
+    },
+    toggle2: function() {
+      this.isOpen2 = !this.isOpen2
     }
   }
 }

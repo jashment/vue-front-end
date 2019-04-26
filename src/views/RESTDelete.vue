@@ -2,7 +2,7 @@
     <div>
         <v-container>
           <v-card>
-            <h1>Delete An Animal</h1>
+            <h1>Delete An Animal from REST</h1>
             <v-flex xs12>
               <v-text-field v-model="id" label="ID" required></v-text-field>
             </v-flex>

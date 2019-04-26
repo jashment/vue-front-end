@@ -33,12 +33,12 @@ export default {
         }
     },
     created () {
-        axios
-        .get('https://floating-temple-55389.herokuapp.com/animals/all')
-        .then((res) => {
-            this.animals = res.data
-        })
-        .catch(error => console.log(error))
+        // axios
+        // .get('https://floating-temple-55389.herokuapp.com/animals/all')
+        // .then((res) => {
+        //     this.animals = res.data
+        // })
+        // .catch(error => console.log(error))
     }
 }
 </script>

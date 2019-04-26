@@ -3,13 +3,15 @@
         <v-container>
           <v-card>
             <h1>Update An Animal from REST</h1>
-            <v-flex xs12>
+            <v-layout row wrap>
+            <v-flex xs6>
               <v-text-field v-model="id" label="ID" required></v-text-field>
             </v-flex>
-            <v-flex xs12>
+            <v-flex xs6>
               <v-text-field v-model="description" label="Description" required></v-text-field>
             </v-flex>
-            <v-btn @click="updateAnimal">Update</v-btn>
+            </v-layout>
+            <v-btn @click="updateAnimal" color="info">Update</v-btn>
             {{error}}
             {{returnedItem}}
           </v-card>

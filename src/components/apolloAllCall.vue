@@ -1,13 +1,15 @@
 <template>
-  <div>
+  <v-flex>
     <v-container>
       <v-card>
         <h1>View All Animals from GraphQL</h1>
         <v-btn color="info" v-on:click="getAllGraphql(), toggle()">All</v-btn>
-        <v-card v-show="isOpen">{{myItem.animals}} {{error}}</v-card>
+        <v-card v-show="isOpen">
+          {{myItem.animals}} {{error}}
+        </v-card>
       </v-card>
     </v-container>
-  </div>
+  </v-flex>
 </template>
 
 <script>

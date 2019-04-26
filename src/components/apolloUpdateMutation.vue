@@ -3,15 +3,17 @@
         <v-container>
           <v-card>
             <h1>Update An Animal from GraphQL</h1>
-            <v-flex xs12>
+            <v-layout row wrap>
+            <v-flex xs6>
               <v-text-field v-model="item.id" label="ID" required></v-text-field>
             </v-flex>
-            <v-flex xs12>
+            <v-flex xs6>
               <v-text-field v-model="item.description" label="Description" required></v-text-field>
             </v-flex>
-            <v-btn @click="submitUpdate()">Update</v-btn>
+            <v-btn @click="submitUpdate()" color="info">Update</v-btn>
             {{error}}
             {{returnedItem}}
+            </v-layout>
           </v-card>
         </v-container>
   </div>

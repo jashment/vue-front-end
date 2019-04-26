@@ -27,7 +27,7 @@ export default {
           query: gql`
             query animalConnect {
                 animalsConnection {
-                    edges {
+                  edges {
                     node {
                         name
                     }

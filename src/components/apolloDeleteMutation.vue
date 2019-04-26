@@ -6,7 +6,7 @@
             <v-flex xs12>
               <v-text-field v-model="item.id" label="ID" required></v-text-field>
             </v-flex>
-            <v-btn @click="submitDelete()">Delete</v-btn>
+            <v-btn @click="submitDelete()" color="info">Delete</v-btn>
             {{error}}
             {{returnedItem}}
           </v-card>

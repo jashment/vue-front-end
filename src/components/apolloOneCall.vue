@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <v-flex class="about">
     <v-container>
       <v-card>
         <h1>View One Animal from GraphQL</h1>
@@ -10,7 +10,7 @@
         <div v-show="isOpen">{{error}} {{myItem}}</div>
       </v-card>
     </v-container>
-  </div>
+  </v-flex>
 </template>
 
 <script>

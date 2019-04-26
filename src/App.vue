@@ -12,7 +12,8 @@
        <!-- <HelloWorld/>  -->
        <v-btn color="info" @click="toggle()">GraphQL Content</v-btn>
        <v-btn color="info" @click="toggle2()"> REST Content</v-btn>
-       <v-container v-show="isOpen">
+
+       <v-flex v-show="isOpen">
         <apolloAllCall/>
         <apolloOneCall/>
         <apolloConnectCall/>
@@ -20,14 +21,15 @@
         <apolloDeleteMutation/>
         <apolloUpdateMutation/>
         <Display/>
-       </v-container>
-       <v-container v-show="isOpen2">
+       </v-flex>
+       <v-flex v-show="isOpen2">
         <RESTCreate/>
         <RESTDelete/>
         <RESTOne/>
         <RESTUpdate/>
         <RESTDisplay/>
-       </v-container>
+       </v-flex>
+
     </v-content>
   </v-app>
 </template>

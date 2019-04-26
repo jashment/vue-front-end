@@ -6,7 +6,7 @@
             <v-flex xs12>
               <v-text-field v-model="id" label="ID" required></v-text-field>
             </v-flex>
-            <v-btn @click="getOne(), toggle()">Show One</v-btn>
+            <v-btn @click="getOne(), toggle()" color="info">Show One</v-btn>
             <v-card v-show="isOpen" style="margin:auto; text-align:center;">
                 <v-img :src="animals.url" width="200px" height="200px" style="margin:auto;"></v-img>
                 {{animals.name}}

@@ -2,7 +2,7 @@
   <v-app>
     <v-toolbar app>
       <v-toolbar-title class="headline text-uppercase">
-        <span>GraphQL</span>
+        <span>GraphQL and REST</span>
         <span class="font-weight-light">Front End</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -10,10 +10,14 @@
 
     <v-content>
        <!-- <HelloWorld/>  -->
-       <v-btn color="info" @click="toggle()">GraphQL Content</v-btn>
-       <v-btn color="info" @click="toggle2()"> REST Content</v-btn>
-
-       <v-flex v-show="isOpen">
+       <div style="text-align: center;">
+        <h1 class="animated infinite zoomInDown">Pick One You Would Like To View</h1>
+        <br>
+        <v-btn color="info" @click="toggle()">GraphQL Content</v-btn>
+        <v-btn color="info" @click="toggle2()"> REST Content</v-btn>
+       </div>
+      <v-expand-transition>
+       <v-flex v-show="isOpen" shrink>
         <apolloAllCall/>
         <apolloOneCall/>
         <apolloConnectCall/>
@@ -22,14 +26,16 @@
         <apolloUpdateMutation/>
         <Display/>
        </v-flex>
-       <v-flex v-show="isOpen2">
+      </v-expand-transition>
+      <v-expand-transition>
+       <v-flex v-show="isOpen2" shrink>
         <RESTCreate/>
         <RESTDelete/>
         <RESTOne/>
         <RESTUpdate/>
         <RESTDisplay/>
        </v-flex>
-
+      </v-expand-transition>
     </v-content>
   </v-app>
 </template>

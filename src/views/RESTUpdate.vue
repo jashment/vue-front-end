@@ -12,8 +12,8 @@
             </v-flex>
             </v-layout>
             <v-btn @click="updateAnimal" color="info">Update</v-btn>
-            {{error}}
-            {{returnedItem}}
+            <!-- {{error}}
+            {{returnedItem}} -->
           </v-card>
         </v-container>
   </div>
@@ -55,7 +55,7 @@ export default {
             axios
             .put('https://floating-temple-55389.herokuapp.com/animals/' + this.id + '/update', animalData)
             .then((res) => {
-                alert('Animal Updated!' + animalData)
+                alert('Animal Updated! Refresh to view' + animalData)
                 this.$router.push('/')
             })
             .catch((error) => {

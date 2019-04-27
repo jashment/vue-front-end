@@ -52,7 +52,7 @@ export default {
             axios
             .post('https://floating-temple-55389.herokuapp.com/animals/create', animalData)
             .then((res) => {
-                alert('Animal Created!')
+                alert('Animal Created! Refresh to view')
                 this.$router.push('/')
             })
             .catch(error => console.log(error))

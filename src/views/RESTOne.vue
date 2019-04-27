@@ -29,13 +29,11 @@ export default {
                 genus: ""
             },
             id: this.$route.params.id,
+            isOpen: false
         }
     },
     props: {
-        animal: {
-            type: Object,
-            required: true
-        }
+        //
     },
         created () {
             axios

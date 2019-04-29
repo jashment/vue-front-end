@@ -55,7 +55,7 @@ export default {
             axios
             .put('https://floating-temple-55389.herokuapp.com/animals/' + this.id + '/update', animalData)
             .then((res) => {
-                alert('Animal Updated! Refresh to view' + animalData)
+                console.log('Animal Updated')
                 this.$router.push('/')
             })
             .catch((error) => {

@@ -46,7 +46,7 @@ export default {
             axios
             .delete('https://floating-temple-55389.herokuapp.com/animals/' + this.id + '/delete')
             .then((res) => {
-                alert('Animal Deleted!')
+                console.log('Animal Deleted')
                 this.$router.push('/')
             })
             .catch((error) => {

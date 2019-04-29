@@ -17,6 +17,7 @@
        <div style="text-align: center;">
         <h1 class="animated zoomInDown">Pick One You Would Like To View</h1>
         <br>
+        <v-img></v-img>
         <!-- <v-btn class="animated infinite pulse" color="info" @click="toggle()">GraphQL Content</v-btn>
         <v-btn class="animated infinite pulse" color="info" @click="toggle2()"> REST Content</v-btn> -->
        </div>

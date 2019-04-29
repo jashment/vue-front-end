@@ -4,7 +4,7 @@
 
             <v-flex
               v-for="animal in animals"
-              :key="animal.name"
+              :key="animal._id"
               xs4
             >
                 <animalCard :animal="animal" width="200px" height="200px"/>

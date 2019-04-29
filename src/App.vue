@@ -27,7 +27,7 @@
          <div style="text-align: center;">
           <v-btn class="animated infinite pulse" color="info" @click="toggle3()">View All Animals</v-btn>
          </div>
-          <div class="animated slideInDown" v-show="isOpen3">
+          <div class="animated slideInDown slow" v-show="isOpen3">
             <Display/>
           </div>
          
@@ -44,7 +44,7 @@
          <div style="text-align: center;">
           <v-btn class="animated infinite pulse" color="info" @click="toggle4()">View All Animals</v-btn>
           </div>
-          <div class="animated slideInDown" v-show="isOpen4">
+          <div class="animated slideInDown slow" v-show="isOpen4">
             <RESTDisplay/>
           </div>
         <RESTCreate/>

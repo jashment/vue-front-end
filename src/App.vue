@@ -14,13 +14,14 @@
 
     <v-content>
        <!-- <HelloWorld/>  -->
-       <div style="text-align: center;">
+       <v-card style="text-align: center;">
         <h1 class="animated zoomInDown">Pick One You Would Like To View</h1>
         <br>
-        <v-img></v-img>
+        <h1 class="headline mb-0">GraphQL and RESTful Zoo</h1>
+        <v-img src="https://cdn.pixabay.com/photo/2012/04/02/16/50/cage-24930_1280.jpg" style="height: 400px;" position="100% 20%"></v-img>
         <!-- <v-btn class="animated infinite pulse" color="info" @click="toggle()">GraphQL Content</v-btn>
         <v-btn class="animated infinite pulse" color="info" @click="toggle2()"> REST Content</v-btn> -->
-       </div>
+       </v-card>
       <v-expand-transition>
        <v-flex v-show="isOpen" shrink>
          <div style="text-align: center;">

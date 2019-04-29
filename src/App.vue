@@ -6,6 +6,10 @@
         <span class="font-weight-light">Front End</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
+      <v-toolbar-items>
+        <v-btn color="info" @click="toggle()">GraphQL Content</v-btn>
+        <v-btn color="info" @click="toggle2()"> REST Content</v-btn>
+      </v-toolbar-items>
     </v-toolbar>
 
     <v-content>
@@ -13,13 +17,13 @@
        <div style="text-align: center;">
         <h1 class="animated zoomInDown">Pick One You Would Like To View</h1>
         <br>
-        <v-btn class="animated infinite pulse" color="info" @click="toggle()">GraphQL Content</v-btn>
-        <v-btn class="animated infinite pulse" color="info" @click="toggle2()"> REST Content</v-btn>
+        <!-- <v-btn class="animated infinite pulse" color="info" @click="toggle()">GraphQL Content</v-btn>
+        <v-btn class="animated infinite pulse" color="info" @click="toggle2()"> REST Content</v-btn> -->
        </div>
       <v-expand-transition>
        <v-flex v-show="isOpen" shrink>
          <div style="text-align: center;">
-          <v-btn color="info" @click="toggle3()">View All Animals</v-btn>
+          <v-btn class="animated infinite pulse" color="info" @click="toggle3()">View All Animals</v-btn>
          </div>
           <div class="animated slideInDown" v-show="isOpen3">
             <Display/>
@@ -36,7 +40,7 @@
       <v-expand-transition>
        <v-flex v-show="isOpen2" shrink>
          <div style="text-align: center;">
-          <v-btn color="info" @click="toggle4()">View All Animals</v-btn>
+          <v-btn class="animated infinite pulse" color="info" @click="toggle4()">View All Animals</v-btn>
           </div>
           <div class="animated slideInDown" v-show="isOpen4">
             <RESTDisplay/>

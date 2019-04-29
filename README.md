@@ -2,7 +2,7 @@
 
 ## Project setup
 ```
-git clone https://github.com/jashment/graphQL.git and follow instructions to install and run
+git clone https://github.com/jashment/graphQL.git and follow readme instructions to install and run
 ```
 
 ```
